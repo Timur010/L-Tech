@@ -1,6 +1,6 @@
 import UIKit
 
-final class LTEXLabel: UILabel {
+final class LTECHLabel: UILabel {
 
     enum Style {
         case body

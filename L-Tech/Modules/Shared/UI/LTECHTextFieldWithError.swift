@@ -1,10 +1,10 @@
 import UIKit
 import SnapKit
 
-final class LTEXTextFieldWithError: UIView {
+final class LTECHTextFieldWithError: UIView {
 
     let textField = UITextField()
-    private let errorLabel = LTEXLabel(style: .footnote)
+    private let errorLabel = LTECHLabel(style: .footnote)
     private let borderView = UIView()
     
 
@@ -23,9 +23,9 @@ final class LTEXTextFieldWithError: UIView {
         addSubview(textField)
         addSubview(errorLabel)
 
-        borderView.layer.cornerRadius = 8
+        borderView.layer.cornerRadius = 14
         borderView.layer.borderWidth = 1
-        borderView.layer.borderColor = UIColor.systemGray4.cgColor
+        borderView.layer.borderColor = UIColor.extralightGray.cgColor
 
         textField.borderStyle = .none
         errorLabel.textColor = .systemRed
@@ -54,7 +54,7 @@ final class LTEXTextFieldWithError: UIView {
     }
 
     func hideError() {
-        borderView.layer.borderColor = UIColor.systemGray4.cgColor
+        borderView.layer.borderColor = UIColor.extralightGray.cgColor
         errorLabel.isHidden = true
     }
 }
