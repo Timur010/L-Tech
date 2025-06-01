@@ -1,11 +1,5 @@
-//
-//  AppDelegate.swift
-//  L-Tech
-//
-//  Created by Timur Kadiev on 27.05.2025.
-//
-
 import UIKit
+
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
