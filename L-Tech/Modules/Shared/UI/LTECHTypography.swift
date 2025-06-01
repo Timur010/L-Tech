@@ -1,6 +1,6 @@
 import UIKit
 
-enum LTEChTypography {
+enum LTECHTypography {
 
     static var body: [NSAttributedString.Key: Any] {
         let paragraph = NSMutableParagraphStyle()

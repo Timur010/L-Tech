@@ -16,7 +16,7 @@ final class NewsFeedViewController: UIViewController, NewsFeedDisplayLogic {
     private let headerView = UIView()
 
     private let titleLabel: UILabel = {
-        let label = LTEXLabel(style: .headline)
+        let label = LTECHLabel(style: .headline)
         label.text = "Лента новостей"
         label.textAlignment = .center
         return label

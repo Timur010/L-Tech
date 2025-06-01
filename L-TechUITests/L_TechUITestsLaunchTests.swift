@@ -1,10 +1,3 @@
-//
-//  L_TechUITestsLaunchTests.swift
-//  L-TechUITests
-//
-//  Created by Timur Kadiev on 27.05.2025.
-//
-
 import XCTest
 
 final class L_TechUITestsLaunchTests: XCTestCase {

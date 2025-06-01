@@ -6,9 +6,9 @@ final class NewsFeedCell: UITableViewCell {
     private let containerView = UIView()
     private let separator = UIView()
     private let postImageView = UIImageView()
-    private let titleLabel = LTEXLabel(style: .subheadlineSemibold)
-    private let textLabelContent = LTEXLabel(style: .subheadline)
-    private let dateLabel = LTEXLabel(style: .footnote)
+    private let titleLabel = LTECHLabel(style: .subheadlineSemibold)
+    private let textLabelContent = LTECHLabel(style: .subheadline)
+    private let dateLabel = LTECHLabel(style: .footnote)
 
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {

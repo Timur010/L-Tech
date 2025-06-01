@@ -28,21 +28,21 @@ final class LTECHLabel: UILabel {
     private func configure(with style: Style) {
         switch style {
         case .body:
-            styleAttributes = LTEXTypography.body
+            styleAttributes = LTECHTypography.body
         case .bodySemibold:
-            styleAttributes = LTEXTypography.bodySemibold
+            styleAttributes = LTECHTypography.bodySemibold
         case .title2Bold:
-            styleAttributes = LTEXTypography.title2Bold
+            styleAttributes = LTECHTypography.title2Bold
         case .headline:
-            styleAttributes = LTEXTypography.headline
+            styleAttributes = LTECHTypography.headline
         case .title3bold:
-            styleAttributes = LTEXTypography.title3bold
+            styleAttributes = LTECHTypography.title3bold
         case .subheadline:
-            styleAttributes = LTEXTypography.subheadline
+            styleAttributes = LTECHTypography.subheadline
         case .subheadlineSemibold:
-            styleAttributes = LTEXTypography.subheadlineSemibold
+            styleAttributes = LTECHTypography.subheadlineSemibold
         case .footnote:
-            styleAttributes = LTEXTypography.footnote
+            styleAttributes = LTECHTypography.footnote
         }
     }
 

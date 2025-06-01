@@ -11,10 +11,10 @@ final class NewsDetailViewController: UIViewController, NewsDetailDisplayLogic {
     
     private let scrollView = UIScrollView()
     private let contentView = UIView()
-    private let dateLabel = LTEXLabel(style: .footnote)
-    private let titleLabel = LTEXLabel(style: .title3bold)
+    private let dateLabel = LTECHLabel(style: .footnote)
+    private let titleLabel = LTECHLabel(style: .title3bold)
     private let postImageView = UIImageView()
-    private let bodyLabel = LTEXLabel(style: .body)
+    private let bodyLabel = LTECHLabel(style: .body)
     private let headerView = UIView()
     
     private let backButton: UIButton = {

@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		39B403A92DE6411F009C46F3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 39B403A82DE6411F009C46F3 /* SnapKit */; };
+		39B403AE2DE646D5009C46F3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 39B403AD2DE646D5009C46F3 /* Alamofire */; };
+		39B405492DEA2CFF009C46F3 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 39B405482DEA2CFF009C46F3 /* RealmSwift */; };
+		39B4054E2DEA2D3F009C46F3 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 39B405482DEA2CFF009C46F3 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		39B402CE2DE61E21009C46F3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -22,6 +29,20 @@
 			remoteInfo = "L-Tech";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		39B4054D2DEA2D39009C46F3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				39B4054E2DEA2D3F009C46F3 /* RealmSwift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		39B402B72DE61E1F009C46F3 /* L-Tech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "L-Tech.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +86,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39B405492DEA2CFF009C46F3 /* RealmSwift in Frameworks */,
+				39B403A92DE6411F009C46F3 /* SnapKit in Frameworks */,
+				39B403AE2DE646D5009C46F3 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +115,7 @@
 				39B402B92DE61E1F009C46F3 /* L-Tech */,
 				39B402D02DE61E21009C46F3 /* L-TechTests */,
 				39B402DA2DE61E21009C46F3 /* L-TechUITests */,
+				39B403A72DE6411F009C46F3 /* Frameworks */,
 				39B402B82DE61E1F009C46F3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,6 +130,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		39B403A72DE6411F009C46F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,6 +147,7 @@
 				39B402B32DE61E1F009C46F3 /* Sources */,
 				39B402B42DE61E1F009C46F3 /* Frameworks */,
 				39B402B52DE61E1F009C46F3 /* Resources */,
+				39B4054D2DEA2D39009C46F3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +158,9 @@
 			);
 			name = "L-Tech";
 			packageProductDependencies = (
+				39B403A82DE6411F009C46F3 /* SnapKit */,
+				39B403AD2DE646D5009C46F3 /* Alamofire */,
+				39B405482DEA2CFF009C46F3 /* RealmSwift */,
 			);
 			productName = "L-Tech";
 			productReference = 39B402B72DE61E1F009C46F3 /* L-Tech.app */;
@@ -208,6 +244,11 @@
 			);
 			mainGroup = 39B402AE2DE61E1F009C46F3;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				39B403932DE63FF0009C46F3 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				39B403AC2DE646D5009C46F3 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				39B405472DEA2CFF009C46F3 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 39B402B82DE61E1F009C46F3 /* Products */;
 			projectDirPath = "";
@@ -289,13 +330,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WX7Z7T8KYD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "L-Tech/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,13 +358,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WX7Z7T8KYD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "L-Tech/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -563,6 +606,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		39B403932DE63FF0009C46F3 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		39B403AC2DE646D5009C46F3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		39B405472DEA2CFF009C46F3 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		39B403A82DE6411F009C46F3 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39B403932DE63FF0009C46F3 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		39B403AD2DE646D5009C46F3 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39B403AC2DE646D5009C46F3 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		39B405482DEA2CFF009C46F3 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39B405472DEA2CFF009C46F3 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 39B402AF2DE61E1F009C46F3 /* Project object */;
 }

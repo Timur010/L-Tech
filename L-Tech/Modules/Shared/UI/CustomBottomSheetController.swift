@@ -10,7 +10,7 @@ final class CustomBottomSheetController: UIViewController {
 
     private let backgroundView = UIView()
     private let containerView = UIView()
-    private let titleLabel = LTEXLabel(style: .bodySemibold)
+    private let titleLabel = LTECHLabel(style: .bodySemibold)
 
     init(selected: String) {
         self.selectedFilter = selected
@@ -112,7 +112,7 @@ final class CustomBottomSheetController: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(filterTapped(_:)))
         row.addGestureRecognizer(tap)
 
-        let label = LTEXLabel(style: .body)
+        let label = LTECHLabel(style: .body)
         label.text = filter
 
         let checkmark = UIImageView()
@@ -148,8 +148,6 @@ final class CustomBottomSheetController: UIViewController {
         dismiss(animated: true)
     }
 }
-
-// MARK: - Layout Constants
 
 private enum Layout {
     static let sheetHeightRatio: CGFloat = 0.25

@@ -13,11 +13,11 @@ final class LoginViewController: UIViewController {
     var router: LoginRoutingLogic?
 
     private let logoImageView = UIImageView(image: UIImage(named: "logo"))
-    private let titleLabel = LTEXLabel(style: .title3bold)
-    private let phoneLabel = LTEXLabel(style: .bodySemibold)
+    private let titleLabel = LTECHLabel(style: .title3bold)
+    private let phoneLabel = LTECHLabel(style: .bodySemibold)
     private let phoneTextField = UITextField()
-    private let passwordLabel = LTEXLabel(style: .bodySemibold)
-    private let passwordFieldWithError = LTEXTextFieldWithError()
+    private let passwordLabel = LTECHLabel(style: .bodySemibold)
+    private let passwordFieldWithError = LTECHTextFieldWithError()
     private let showPasswordButton = UIButton(type: .system)
     private let loginButton = UIButton(type: .system)
 
@@ -43,7 +43,10 @@ final class LoginViewController: UIViewController {
         phoneLabel.text = "Телефон"
         phoneTextField.placeholder = "+7"
         phoneTextField.keyboardType = .phonePad
-        phoneTextField.borderStyle = .roundedRect
+        phoneTextField.layer.cornerRadius = 14
+        phoneTextField.layer.borderWidth = 1
+        phoneTextField.layer.borderColor = UIColor.extralightGray.cgColor
+
 
         passwordLabel.text = "Пароль"
 
@@ -183,7 +186,7 @@ extension LoginViewController: UITextFieldDelegate {
 
 private enum Layout {
     static let logoTop: CGFloat = 40
-    static let titleTop: CGFloat = 16
+    static let titleTop: CGFloat = 32
     static let sectionTop: CGFloat = 32
     static let fieldSpacing: CGFloat = 20
     static let labelToFieldSpacing: CGFloat = 8

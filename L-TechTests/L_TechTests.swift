@@ -1,10 +1,3 @@
-//
-//  L_TechTests.swift
-//  L-TechTests
-//
-//  Created by Timur Kadiev on 27.05.2025.
-//
-
 import Testing
 @testable import L_Tech
 
